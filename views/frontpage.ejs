@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Shortener</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2e6dc;
+            /* soft pastel beige */
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 40px;
+            background-color: #f2e6dc;
+
+        }
+
+        .navbar button {
+            margin-left: 15px;
+            padding: 10px 20px;
+            font-size: 14px;
+            border: 2px solid #00a6a6;
+            background-color: transparent;
+            color: #00a6a6;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .navbar button:hover {
+            background-color: #00a6a6;
+            color: white;
+        }
+
+        /* Main container */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            padding: 40px 40px;
+        }
+
+        .description {
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .description h1 {
+            font-size: 44px;
+            margin-bottom: 20px;
+            color: #b23b3b;
+        }
+
+        .description p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .image img {
+            max-width: 500px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f2e6dc;
+            padding: 20px 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #5e5e5e;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <button onclick="location.href='/login'">Login</button>
+        <button onclick="location.href='/signup'">Sign Up</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="description">
+            <h1>Simplify Your Links</h1>
+            <p>
+                Welcome to our URL Shortener – the smart way to shrink long, complicated URLs into short,
+                shareable links. Whether you're a marketer, developer, or casual user, our tool makes
+                link management a breeze.
+            </p>
+            <p>
+                ✦ Create clean, compact links in seconds.<br>
+                ✦ Track click stats in real-time.<br>
+                ✦ Customize your short URLs with keywords.<br>
+                ✦ Perfect for social media, blogs, and emails.
+            </p>
+            <p>
+                No more clunky URLs – just short, smart, and simple!
+            </p>
+            <p><strong>This site is made by Soumita Banerjee.</strong></p>
+        </div>
+
+
+        <div class="image">
+            <img src="/images/images3.png" alt="URL Shortener Illustration">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Soumita Banerjee | All rights reserved.
+    </footer>
+
+</body>
+
+</html>
