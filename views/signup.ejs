@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sign Up</title>
   <style>
     :root {
@@ -23,7 +24,8 @@
       padding: 0;
     }
 
-    html, body {
+    html,
+    body {
       height: 100%;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
@@ -36,12 +38,33 @@
 
     .image-section {
       flex: 1.5;
-      background-image: url("/images/images.png"); /* Change if needed */
+      background-image: url("/images/images.png");
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
-      background-color: #f9d369; /* fallback */
+      background-color: #f9d16c;
     }
+
+    .home-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 10px 20px;
+      border: 2px solid #00a3a3;
+      background-color: transparent;
+      color: #00a3a3;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .home-btn:hover {
+      background-color: #00a3a3;
+      color: #fff;
+    }
+
 
     .form-section {
       flex: 1;
@@ -119,7 +142,7 @@
     .link-btn {
       background-color: #e91e63;
       color: rgb(255, 255, 255);
-     display: inline-block;
+      display: inline-block;
       text-align: center;
       width: 100%;
       padding: 10px;
@@ -127,9 +150,10 @@
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-     transition: background 0.3s ease;
+      transition: background 0.3s ease;
     }
 
+    /*For mobile screen*/
     @media screen and (max-width: 768px) {
       .container {
         flex-direction: column;
@@ -148,6 +172,8 @@
 </head>
 
 <body>
+  <a href="/" class="home-btn">URLShortner</a>
+
   <div class="container">
     <div class="image-section"></div>
 
@@ -174,4 +200,5 @@
     </div>
   </div>
 </body>
+
 </html>

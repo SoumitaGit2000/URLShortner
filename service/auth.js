@@ -1,6 +1,6 @@
 //const sessionIdToUserMap = new Map()
 const jwt = require("jsonwebtoken")
-const secret = "$Soumita$89651@#"
+const secret = process.env.JWT_SECRATE
 
 /*function setUser(id, User){
     //console.log("UID from cookie:", id);
