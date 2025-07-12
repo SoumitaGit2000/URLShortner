@@ -81,6 +81,7 @@ async function handlerlogin(req, res) {
   const token = setUser(find);
   res.cookie("token", token, { httpOnly: true });
   console.log("LogIn called2...");
+  console.log("JWT_SECRET:", process.env.JWT_SECRET);
   return res.redirect("/home");
 }
 
